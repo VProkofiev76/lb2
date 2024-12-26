@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2</title>
+    <!-- Підключення зовнішньої CSS таблиці -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стилі, задані у контейнері <style> */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 10px;
+        }
+        header {
+            background-color: #006605;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+        }
+        .menu {
+            background-color: #0a7239;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            overflow: hidden;
+        }
+        .menu a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px 15px;
+            float: left;
+        }
+        .menu a:hover {
+            background-color: #045c14;
+        }
+        .content {
+            margin: 20px;
+        }
+        .float-image {
+            float: right;
+            margin: 10px;
+        }
+        #footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* Стиль для прихованого блоку */
+        #hidden-block {
+            position: fixed;
+            top: 50%;
+            left: -225px;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 120px;
+            background-color: #0a7239;
+            border: 2px solid #0a7239;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            transition: left 0.3s;
+        }
+        #hidden-block:hover {
+            left: 0;
+        }
+        #hidden-block .handle {
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 144px;
+            background-color: #045820;
+            color: rgb(255, 255, 255);
+            writing-mode: vertical-rl;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Warcraft</h1>
+    </header>
+    <div class="menu">
+        <a href="#setting">Сеттинг</a>
+        <a href="#games">Ігри по всесвіту</a>
+        <a href="#film">Фільм</a>
+    </div>
+    <div class="content">
+        <h2 id="setting">Сеттинг</h2>
+        <img src="1Lb2.jpg" alt="Зображення" class="float-image" style="width: 200px; height: auto;">
+        <p>Сеттинг всесвіту витриманий у стилі фентезі з елементами стимпанку, європейської культури та деяких елементів східної культури. У ньому представлені кілька планет-світів: Азерот, головне місце дії і рідний світ людей, він включає такі регіони як Східні королівства, Калімдор, Нордскол, Пандарію, Розколоті острови, Зандалар, Кул-Тірас та Драконські острови; а також світи Аргус та Дренор, який є рідним світом для орків. Історія всесвіту Warcraft описує в основному протистояння між двома протиборчими фракціями: Альянсом і Ордою та їх боротьбу з демонами Палаючий Легіон, нежиттю Плеті, драконом Смертокрилом, Стародавніми богами та іншими силами, що загрожують Азероту.</p>
+
+        <h2 id="games">Ігри по всесвіту</h2>
+        <p>Warcraft: Orcs & Humans</p>
+            Warcraft II: Tides of Darkness</p>
+            Warcraft II: Beyond the Dark Portal (дополнение)</p>
+            Warcraft Adventures: Lord of the Clans (отменена)</p>
+            Warcraft III: Reign of Chaos</p>
+            Warcraft III: The Frozen Throne (дополнение)</p>
+            Warcraft III: Reforged (ремейк)</p>
+            World of Warcraft (ниже: дополнения)</p>
+            World of Warcraft: The Burning Crusade</p>
+            World of Warcraft: Wrath of the Lich King</p>
+            World of Warcraft: Cataclysm</p>
+            World of Warcraft: Mists of Pandaria</p>
+            World of Warcraft: Warlords of Draenor</p>
+            World of Warcraft: Legion</p>
+            World of Warcraft: Battle for Azeroth</p>
+            World of Warcraft: Shadowlands</p>
+            World of Warcraft: Dragonflight</p>
+            World of Warcraft: The War Within</p>
+
+        <h2 id="film">Фільм</h2>
+        <p>У травні 2006 року компанія Legendary Pictures набула права на зйомку фільму за мотивами серії Warcraft. Фільм присвячений першому зіткненню між людьми і орками, тобто подіям гри Warcraft: Orcs & Humans, при цьому включаючи і персонажів з Warcraft II: Tides of Darkness і показуючи обидві сторони конфлікту - Альянс і Орду - як героїв, не віддаючи переваги одній зі сторін.</p>
+
+        <div id="highlight" style="position: absolute; top: 50px; left: 50px; background-color: #d68009; padding: 10px;">
+            BLIZARD
+        </div>
+
+    <div id="hidden-block">
+        <div class="handle">Wiki</div>
+        <img src="logo.png" alt="Логотип" style="width: 100%; height: auto;">
+        <p><a href="https://uk.wikipedia.org/wiki/Warcraft" target="_blank">Сторінка на Wiki</a></p>
+    </div>
+    
+    <footer id="footer">
+        Warcraft Fan Page
+    </footer>
+</body>
+</html>
